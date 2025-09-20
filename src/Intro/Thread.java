@@ -1,4 +1,4 @@
-package Simple;
+package Intro;
 
 public class Thread extends java.lang.Thread {
     @Override
