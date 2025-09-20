@@ -12,7 +12,7 @@ public class ComputaPrimosThread extends Thread {
 
     @Override
     public void run() {
-        for (int valor = limiteInferior; valor < limiteSuperior; valor++) {
+                for (int valor = limiteInferior; valor <= limiteSuperior; valor++) {
             if (ehPrimo(valor)) {
                 System.out.println(valor);
             }
@@ -20,7 +20,7 @@ public class ComputaPrimosThread extends Thread {
     }
 
     private boolean ehPrimo(int valor) {
-        for (int divisor = 2; divisor < valor; divisor++) {
+                for (int divisor = 2; divisor <= Math.sqrt(valor); divisor++) {
             if (valor % divisor == 0) {
                 return false;
             }

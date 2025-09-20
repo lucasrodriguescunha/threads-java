@@ -13,7 +13,7 @@ public class Versao1ImprimePrimosSemThread {
     }
 
     private static boolean ehPrimo(int valor) {
-        for (int divisor = 2; divisor < valor; divisor++) {
+                for (int divisor = 2; divisor <= Math.sqrt(valor); divisor++) {
             if (valor % divisor == 0) {
                 return false;
             }
